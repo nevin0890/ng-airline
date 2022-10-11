@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row g-3">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">name</th>
+                                <th scope="col">country</th>
+                                <th scope="col">logo</th>
+                                <th scope="col">slogan</th>
+                                <th scope="col">head_quaters</th>
+                                <th scope="col">website</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of viewAirline">
+                            <td>{{i.id}}</td>
+                            <td>{{i.name}}</td>
+                            <td>{{i.country}}</td>
+                            <td><img src="{{i.logo}}" alt=""></td>
+                            <td>{{i.slogan}}</td>
+                            <td>{{i.head_quaters}}</td>
+                            <td>{{i.website}}</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
